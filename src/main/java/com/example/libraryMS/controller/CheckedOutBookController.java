@@ -21,23 +21,17 @@ public class CheckedOutBookController {
     @Autowired
     private CheckedOutBookService checkedOutBookService;
 
-    @Autowired
-    private MemberService memberService;
-
-    @Autowired
-    private BookService bookService;
-
     @PostMapping("/checkout")
     public ResponseEntity<String> checkoutBook(@RequestParam String memberJmbg, @RequestParam String bookIsbn) {
-        Member member = memberService.findMemberByJmbg(memberJmbg);
-        Book book = bookService.findBookByIsbn(bookIsbn);
 
-        if (member != null && book != null) {
-            checkedOutBookService.checkedOutBooks(member, book);
+        boolean ok = checkedOutBookService.checkedOutBooks(memberJmbg, bookIsbn);
+
+        if(ok){
             return ResponseEntity.ok("Successfully checked-out");
         } else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error");
         }
+
     }
 
     @GetMapping("/checkedoutbooks")
