@@ -1,7 +1,7 @@
-A full-stack Library Management System built with Spring Boot, featuring a responsive web interface for managing books, members, and checkouts.
+Library Management System built with Spring Boot, featuring a responsive web interface for managing books, members, and checkouts.
 This project demonstrates CRUD operations, RESTful API integration, and database interaction using modern Java web development practices.
 
-Features:
+## Features:
 - Add, edit, and delete library members
 - Add new books with title, author, and ISBN
 - Check out and return books
@@ -9,12 +9,15 @@ Features:
 - Modern, responsive web UI (HTML, CSS, JavaScript)
 - Connected to a MySQL database
 
-Tech Stack:
+## Tech Stack:
+
 Backend: Spring Boot
+
 Frontend: HTML, CSS, JavaScript
+
 Database: MySQL
 
-Description:
+## Description:
 The system allows librarians to manage library members and books efficiently.
 Users can:
 - Register new members
@@ -22,7 +25,7 @@ Users can:
 - Track which books are currently checked out and by whom
 - Manage return dates and membership expiration
 
-🖼️ Screenshots
+## 🖼️ Screenshots:
 <img width="1887" height="866" alt="Screenshot 2025-10-16 100425" src="https://github.com/user-attachments/assets/aa4d1ca8-80f0-459d-9b89-0b7dc418938d" />
 <img width="1903" height="876" alt="Screenshot 2025-10-16 100353" src="https://github.com/user-attachments/assets/df447806-cd2d-4bcf-bc34-8df895bce3df" />
 <img width="1900" height="870" alt="Screenshot 2025-10-16 100330" src="https://github.com/user-attachments/assets/d268753e-75c7-48f3-91d6-0e40b668b249" />
